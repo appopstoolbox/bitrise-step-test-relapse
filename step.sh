@@ -9,4 +9,4 @@ test_count=$(/usr/libexec/PlistBuddy -c "Print :TestsCount" ${BITRISE_XCRESULT_P
 
 
 # Test regression
-./cli-regression-protector "test_relapse_${test_name}" "$warning_number" ">" ".ci/ci.sqlite3"
+./relapse "test_relapse_${test_name}" "$warning_number" ">" ".ci/ci.sqlite3"
