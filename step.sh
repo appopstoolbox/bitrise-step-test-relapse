@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-# Compute the number of warnings
+# Get the number of warnings
 test_name=$(/usr/libexec/PlistBuddy -c "Print :TestableSummaries:0:TestName" ${BITRISE_XCRESULT_PATH}/TestSummaries.plist)
 
 # Trim all spaces
