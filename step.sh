@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+SCRIPTPATH=$( cd "$(dirname "$0")" ; pwd -P )
 TestCount=$(/usr/libexec/PlistBuddy -c "Print :TestsCount" $xcresultPath/Info.plist)
 TestFailedCount=$(/usr/libexec/PlistBuddy -c "Print :TestsFailedCount" $xcresultPath/Info.plist)
 TestErrorCount=$(/usr/libexec/PlistBuddy -c "Print :ErrorCount" $xcresultPath/Info.plist)
