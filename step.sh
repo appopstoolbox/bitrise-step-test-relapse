@@ -15,3 +15,7 @@ echo "Test Warning Count: $TestWarningCount"
 ./relapse "TestFailedCount_relapse_$BITRISE_SCHEME" "$TestFailedCount" "<" ".ci/ci.sqlite3"
 ./relapse "TestErrorCount_relapse_$BITRISE_SCHEME" "$TestErrorCount" "<" ".ci/ci.sqlite3"
 ./relapse "TestWarningCount_relapse_$BITRISE_SCHEME" "$TestWarningCount" "<" ".ci/ci.sqlite3"
+
+git add .ci/ci.sqlite3
+git commit -am "Update Test Count database"
+git push origin
