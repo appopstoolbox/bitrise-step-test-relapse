@@ -19,4 +19,4 @@ $SCRIPTPATH/relapse "TestWarningCount_relapse_$BITRISE_SCHEME" "$TestWarningCoun
 
 git add .ci/ci.sqlite3
 git commit -am "Update Test Count database"
-git push origin $BITRISE_GIT_BRANCH
+git push
