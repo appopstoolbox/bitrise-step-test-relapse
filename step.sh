@@ -19,5 +19,5 @@ $ScriptPath/relapse "TestErrorCount_relapse_$BITRISE_SCHEME" "$TestErrorCount" "
 $ScriptPath/relapse "TestWarningCount_relapse_$BITRISE_SCHEME" "$TestWarningCount" "<" $DBPath
 
 git add $DBPath
-git commit -am "Update Test Count database"
+git commit -m "Update Test Count database"
 git push origin HEAD:$BITRISE_GIT_BRANCH
